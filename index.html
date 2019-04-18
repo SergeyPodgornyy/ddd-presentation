@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Domain-Driven Design in simple words</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+    <link rel="stylesheet" href="styles/custom.css">
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Domain-Driven Design in simple words</h1>
+        <p>
+            <a href="https://www.linkedin.com/in/sergey-podgornyy-5ab63385/">
+                Sergey Podgornyy
+            </a> | ottonova
+        </p>
+    </header>
+    <section class="slide" id="cover">
+        <h2>Domain-Driven Design<br> in simple words</h2>
+        <p>Presented to you by
+            <a href="https://www.linkedin.com/in/sergey-podgornyy-5ab63385/">
+                Sergey Podgornyy
+            </a>
+        </p>
+        <img src="pictures/cover/CvI0PYOXYAA7M2I.jpg" alt="" class="cover width">
+    </section>
+    <section class="slide" id="about">
+        <h2>About me</h2>
+        <div class="double">
+            <div>
+                <img src="pictures/about/me.png" style="width: 80%">
+            </div>
+            <div>
+                <h3>Sergey Podgornyy</h3>
+                <h4>Software Engineer, München</h4>
+                <img src="pictures/about/Logo-ottonova.png" alt="ottonova logo" id="ottonova-logo">
+
+                <div class="badges-block">
+                    <img src="pictures/about/zce-php-engineer-logo-l.jpg" class="badge-logo">
+                    <img src="pictures/about/LPIC-1-Logo-300x300.png" class="badge-logo">
+                    <img src="pictures/about/SUSE_Cert-Engineer_Linux.png" class="badge-logo">
+                    <img src="pictures/about/xlaravel_badge.png" class="badge-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slide" id="agenda">
+        <h2>Agenda</h2>
+        <ol>
+            <li>What is the Domain?</li>
+            <li class="next">Principles behind the DDD</li>
+            <li class="next">Application architecture: Layers of DDD</li>
+            <li class="next">Common terms used for DDD</li>
+            <li class="next">Building blocks</li>
+            <li class="next">Characteristics of a strong domain model</li>
+            <li class="next">Advantages and Disadvantages</li>
+            <li class="next">Naming and architectural convension</li>
+        </ol>
+    </section>
+    <section class="slide" id="intro">
+        <h2>Introduction</h2>
+        <div class="double">
+            <img src="pictures/intro/64fc377e6189cbd497e0004aa76e2329_left.png" alt="">
+            <blockquote style="padding-top: 70px">
+                Communication glitches happen all the time.
+            </blockquote>
+            <blockquote style="padding-top: 70px">
+                Assumptions stay in our heads instead of being expressed directly.
+            </blockquote>
+        </div>
+    </section>
+    <section class="slide" id="domain">
+        <h2>What is the Domain?</h2>
+
+        <ol>
+            <li>may be better known to many developers as the <b>business logic</b></li>
+            <li class="next">is "<i>a sphere of knowledge or activity</i>", for instance the business the company runs</li>
+        </ol>
+        <img src="pictures/domain/domain.jpg" alt="">
+    </section>
+    <section class="slide" id="principles">
+        <h2>Principles behind the DDD</h2>
+        <blockquote>To design a good software, it's important to know what that software is about.</blockquote>
+        <hr>
+        <div class="next">
+            <p>Mainly, domain driven design focuses on:</p>
+            <ol>
+                <li>The core domain and domain logic.</li>
+                <li>Complex designs on models of the domain.</li>
+                <li>Improving the application model and resolving emerging domain-related issues by collaborating with domain experts.</li>
+            </ol>
+        </div>
+    </section>
+    <section class="slide" id="layers">
+        <h2>Application architecture: Layers of DDD</h2>
+
+        <p>There are <b>3</b> main layers you should know while developing your application:</p>
+        <ol>
+            <li class="next">
+                <b><i>Domain Layer</i></b>, that contains the infrastructure independent domain logic.
+            </li>
+            <li class="next">
+                <b><i>Infrastructure Layer</i></b> provides the technology dependent artifacts, like implementation to handle database requests and responses, or remote third-party services calls.
+            </li>
+            <li class="next">
+                <b><i>Application Layer</i></b> acts as a gateway to business logic with integrated transaction control.
+            </li>
+        </ol>
+    </section>
+    <section class="slide" id="domain-layer">
+        <h2>Application architecture: Domain layer</h2>
+
+        <img src="pictures/layers/domain.png" alt="">
+    </section>
+    <section class="slide" id="infrastructure-layer">
+        <h2>Application architecture: Infrastructure layer</h2>
+
+        <img src="pictures/layers/infrastructure.png" alt="">
+    </section>
+    <section class="slide" id="application-layer">
+        <h2>Application architecture: Application layer</h2>
+
+        <img src="pictures/layers/application.png" alt="">
+    </section>
+    <section class="slide" id="ui-layer">
+        <h2>Application architecture: Client / User Interface Layer</h2>
+
+        <img src="pictures/layers/ui.png" alt="">
+    </section>
+    <section class="slide" id="architecture">
+        <h2>Application architecture: Layers of DDD</h2>
+
+        <img src="pictures/architecture/63c2cb0b4586d65b31b41b115079bb1b77226e55.png" alt="">
+    </section>
+    <section class="slide" id="terms">
+        <h2>Common terms used for DDD</h2>
+
+        <ol>
+            <li>A <b>Domain</b> is a sphere of knowledge.</li>
+            <li class="next">An <b>Ubiquitous Language</b> is used by all the team in order to connect all the activities of the team with the software.</li>
+            <li class="next">A <b>Bounded Context</b> is usually the solution space, where we design our software or business solution.</li>
+            <li class="next">A <b>Context Map</b> displays the alignment of Domains and their <i>Bounded Contexts</i>.</li>
+        </ol>
+    </section>
+    <section class="slide" id="blocks">
+        <h2>Building blocks</h2>
+
+        <ol>
+            <li>An Entity</li>
+            <li class="next">A Value Object</li>
+            <li class="next">An Aggregate (collection of objects)</li>
+            <li class="next">A Repository</li>
+            <li class="next">Domain Events</li>
+            <li class="next">A Service</li>
+            <li class="next">A Factory</li>
+        </ol>
+    </section>
+    <section class="slide" id="characteristics">
+        <h2>Characteristics of a strong domain model</h2>
+
+        <ol>
+            <li>Being aligned</li>
+            <li>Being isolated</li>
+            <li>Be loosely designed</li>
+            <li>Being reusable</li>
+            <li>Be an abstract and cleanly separated layer</li>
+            <li>Minimum dependencies on infrastructure frameworks</li>
+        </ol>
+    </section>
+    <section class="slide" id="advantages">
+        <h2 class="pros">Advantages of DDD</h2>
+
+        <ol>
+            <li>Eases Communication</li>
+            <li class="next">Business necessities oriented</li>
+            <li class="next">A balanced application</li>
+            <li class="next">Keeping track made easy</li>
+            <li class="next">Improves Flexibility</li>
+            <li class="next">A common set of terms and definitions used by the entire team</li>
+            <li class="next">Emphasizes Domain Over Interface</li>
+        </ol>
+    </section>
+    <section class="slide" id="disadvantages">
+        <h2 class="cons">Disadvantages of DDD</h2>
+
+        <ol>
+            <li>Requires Robust Domain Expertise</li>
+            <li class="next">Encourages Iterative Practices</li>
+            <li class="next">Ill-Suited for Highly Technical Projects</li>
+        </ol>
+    </section>
+
+
+    <!-- TODO: Naming and architectural convension -->
+
+
+    <section class="slide" id="qa">
+        <div class="content">
+            <h3>End of presentation this is!</h3>
+            <h3>Any question do you have?</h3>
+        </div>
+        <img src="pictures/qa/yoda_w3pn.jpg" class="cover width">
+    </section>
+    <p class="badge">
+        <a href="https://github.com/SergeyPodgornyy">Fork me on GitHub</a>
+    </p>
+    <div class="progress"></div>
+    <script src="shower/shower.min.js"></script>
+</body>
+</html>

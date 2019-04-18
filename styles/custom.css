@@ -1,0 +1,219 @@
+/*******************************************************************************
+    BASIC STYLES
+*******************************************************************************/
+
+.slide::after{
+    background:url(../images/ribbon.svg) no-repeat;
+}
+.slide h2 {
+    margin-top: -50px;
+}
+.slide h3 {
+    color: #585a5e;
+    font: 700 40px/1 PT Sans Narrow,sans-serif;
+}
+.slide h4 {
+    color: #585a5e;
+    font: 700 25px/1 PT Sans Narrow,sans-serif;
+}
+
+code.keys,
+span.keys {
+    color: #d20000;
+}
+code.values,
+span.values {
+    color: #33598c;
+}
+code.integers,
+span.integers {
+    color: #7e2bb9;
+}
+code.brackets,
+span.brackets {
+    color: #46ad62;
+}
+
+.pros {
+    color: #1e921e !important;
+}
+.cons {
+    color: #d20000 !important;
+}
+
+.main-text {
+    text-align: center;
+    margin-top: 15%;
+    font: 35px/2 "PT Sans",sans-serif;
+}
+
+/*******************************************************************************
+    TITLE (COVER) PAGE
+*******************************************************************************/
+
+#cover h2 {
+    margin:30px 0 0;
+    color:#FFF;
+    text-align:center;
+    font-size:70px;
+}
+#cover p {
+    margin:10px 0 0;
+    text-align:center;
+    color:#FFF;
+    font-style:italic;
+    font-size:20px;
+}
+#cover p a {
+    color:#FFF;
+}
+
+/*******************************************************************************
+    ABOUT PAGE
+*******************************************************************************/
+
+#about h3,
+#about h4 {
+    margin: 20px auto;
+    text-align: center;
+}
+#about #ottonova-logo {
+    height: 30px;
+    margin: 0 auto;
+    display: block;
+}
+#about div.badges-block {
+    margin-top: 100px;
+    text-align: center;
+}
+#about img.badge-logo {
+    width: 70px;
+    margin: 5px;
+}
+
+/*******************************************************************************
+    INTRO PAGE
+*******************************************************************************/
+
+#intro img {
+    width: 250px;
+}
+
+/*******************************************************************************
+    DOMAIN PAGE
+*******************************************************************************/
+
+#domain ol {
+    font-size: 30px;
+}
+
+#domain img {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*******************************************************************************
+    PRINCIPLES PAGE
+*******************************************************************************/
+
+#principles p {
+    margin-top: 5%;
+    font: 25px/2 "PT Sans",sans-serif;
+}
+
+/*******************************************************************************
+    LAYERS PAGE
+*******************************************************************************/
+
+#layers {}
+
+#domain-layer img,
+#infrastructure-layer img,
+#application-layer img,
+#ui-layer img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#ui-layer img {
+    width: 85%;
+}
+
+/*******************************************************************************
+    ARCHITECTURE PAGE
+*******************************************************************************/
+
+#architecture img {
+    width: 100%;
+    margin-top: -15px;
+}
+
+/*******************************************************************************
+    TERMS PAGE
+*******************************************************************************/
+
+#terms ol {
+    margin-top: 3em;
+}
+
+/*******************************************************************************
+    BLOCKS PAGE
+*******************************************************************************/
+
+#blocks ol {
+    margin-top: 3em;
+}
+
+#blocks ol li {
+    font-style: italic;
+}
+
+/*******************************************************************************
+    CHARACTERISTICS PAGE
+*******************************************************************************/
+
+#characteristics ol {
+    margin-top: 3em;
+}
+#characteristics ol li {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/*******************************************************************************
+    ADVANTAGES PAGE
+*******************************************************************************/
+
+#advantages {}
+
+/*******************************************************************************
+    DISADVANTAGES PAGE
+*******************************************************************************/
+
+#disadvantages ol {
+    margin-top: 3em;
+}
+
+#disadvantages ol li.next {
+    margin-top: 15px;
+}
+
+/*******************************************************************************
+    Question and Answers PAGE
+*******************************************************************************/
+
+#qa .content {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+#qa h3 {
+    font: 700 60px/1 PT Sans Narrow,sans-serif;
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+}
